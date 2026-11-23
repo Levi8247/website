@@ -289,5 +289,1082 @@
 
     .hero-pill {
       align-self: flex-start;
-      background: rgba(255, 255, 255, 0.85)
+      background: rgba(255, 255, 255, 0.85);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink);
     }
+
+    .hero-visual-box {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(8px);
+      border-radius: 18px;
+      padding: 1.35rem;
+      margin-top: 2rem;
+    }
+
+    .hero-visual-box strong {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Section Headers & Page Banners */
+    .page-banner {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.25rem;
+      margin-bottom: 2.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .page-banner h1 {
+      font-size: clamp(2.2rem, 4vw, 3.1rem);
+      margin-bottom: 0.4rem;
+    }
+
+    .page-banner p {
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 2.5rem 0 1.35rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .section-head h2 {
+      font-size: 2rem;
+    }
+
+    .link-inline {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .link-inline:hover {
+      text-decoration: underline;
+    }
+
+    /* Category Cards on Home */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.35rem;
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.6rem;
+      text-align: left;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: var(--accent);
+    }
+
+    .cat-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--sage);
+    }
+
+    .category-card h3 {
+      font-size: 1.65rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .category-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .cat-cta {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* Filter Chips */
+    .filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.75rem;
+    }
+
+    .filter-chip {
+      padding: 0.48rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-size: 0.86rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: var(--transition);
+    }
+
+    .filter-chip:hover {
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .filter-chip.active {
+      background: var(--sage);
+      border-color: var(--sage);
+      color: #fff;
+    }
+
+    /* Product Grid & Cards */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .product-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-3px);
+    }
+
+    .product-swatch-hero {
+      height: 175px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 1rem;
+      position: relative;
+    }
+
+    .product-badge {
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--ink);
+      font-size: 0.73rem;
+      font-weight: 700;
+      padding: 0.28rem 0.65rem;
+      border-radius: 999px;
+    }
+
+    .product-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .product-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .product-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* Shade Selector for Makeup */
+    .shade-box {
+      margin-top: 0.85rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    .shade-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.45rem;
+    }
+
+    .shade-label strong {
+      color: var(--ink);
+    }
+
+    .shade-dots {
+      display: flex;
+      gap: 0.45rem;
+      align-items: center;
+    }
+
+    .shade-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px var(--border);
+      transition: var(--transition);
+    }
+
+    .shade-dot.selected {
+      box-shadow: 0 0 0 2px var(--ink);
+      transform: scale(1.12);
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-top: 0.5rem;
+    }
+
+    .price {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .add-btn {
+      background: var(--ink);
+      color: #fff;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .add-btn:hover {
+      background: var(--accent);
+    }
+
+    /* Ritual Steps (Hair & Body) */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .step-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem;
+    }
+
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .step-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    /* Cart Drawer */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(30, 26, 23, 0.45);
+      z-index: 60;
+      display: none;
+      justify-content: flex-end;
+    }
+
+    .drawer-backdrop.open {
+      display: flex;
+    }
+
+    .drawer {
+      width: 100%;
+      max-width: 410px;
+      background: var(--bg);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -12px 0 36px rgba(0, 0, 0, 0.14);
+    }
+
+    .drawer-head {
+      padding: 1.35rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface);
+    }
+
+    .drawer-head h3 {
+      font-size: 1.6rem;
+    }
+
+    .close-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--surface-alt);
+      font-size: 1.1rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .shipping-bar {
+      padding: 0.85rem 1.5rem;
+      background: var(--surface-alt);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.82rem;
+    }
+
+    .progress-track {
+      height: 6px;
+      background: #DFD5C5;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 0.45rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--sage);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .drawer-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .cart-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .cart-item-title {
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .cart-item-sub {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .qty-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      font-weight: 700;
+    }
+
+    .drawer-foot {
+      padding: 1.35rem 1.5rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .subtotal-row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: var(--muted);
+      padding: 3rem 1rem;
+      font-size: 0.92rem;
+    }
+
+    /* Toast / Modal */
+    .toast {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--ink);
+      color: #fff;
+      padding: 0.7rem 1.35rem;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 500;
+      z-index: 80;
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero, .category-grid, .steps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .menu-toggle {
+        display: inline-flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">
+    Portes gratuitos em encomendas a partir de 50,00 € • Fórmulas veganas e dermatologicamente testadas
+  </div>
+
+  <header>
+    <div class="nav-container">
+      <button class="brand-logo" onclick="navigateTo('home')">Éclat <span>Botanique</span></button>
+
+      <nav class="nav-links" id="navLinks">
+        <button class="nav-btn active" data-page="home" onclick="navigateTo('home')">Início</button>
+        <button class="nav-btn" data-page="skincare" onclick="navigateTo('skincare')">Skincare</button>
+        <button class="nav-btn" data-page="makeup" onclick="navigateTo('makeup')">Maquiagem</button>
+        <button class="nav-btn" data-page="hair-body" onclick="navigateTo('hair-body')">Cabelos &amp; Corpo</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" onclick="toggleCart(true)">
+          <span>Sacola</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PÁGINA 1: INÍCIO -->
+  <main id="page-home" class="page active">
+    <div class="container">
+      <section class="hero">
+        <div>
+          <span class="eyebrow">Coleção Outono / Inverno</span>
+          <h1>Rituais botânicos para pele luminosa todos os dias.</h1>
+          <p>
+            Combinamos extratos vegetais de alta pureza e texturas sensoriais para cuidar do rosto,
+            realçar a cor natural e nutrir cabelos e corpo sem excessos.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="navigateTo('skincare')">Explorar Skincare</button>
+            <button class="btn-secondary" onclick="navigateTo('makeup')">Ver Maquiagem</button>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span class="hero-pill">Best-seller da estação</span>
+          <div class="hero-visual-box">
+            <strong>Sérum Néroli &amp; Esqualano</strong>
+            <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 0.85rem;">
+              Hidratação profunda com absorção rápida e acabamento acetinado.
+            </p>
+            <button class="add-btn" onclick="addToCart('sk-1')">Adicionar • 38,00 €</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-head">
+        <h2>Explore por categoria</h2>
+        <span style="font-size: 0.88rem; color: var(--muted);">4 páginas dedicadas na loja</span>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card" onclick="navigateTo('skincare')">
+          <div>
+            <span class="cat-tag">01 • Rosto</span>
+            <h3>Skincare</h3>
+            <p>Séruns, cremes de barreira e águas botânicas filtradas por tipo de pele.</p>
+          </div>
+          <span class="cat-cta">Ir para Skincare →</span>
+        </button>
+
+        <button class="category-card" onclick="navigateTo('makeup')">
+          <div>
+            <span class="cat-tag">02 • Cor &amp; Brilho</span>
+            <h3>Maquiagem</h3>
+            <p>Bálsamos labiais, blushes líquidos e iluminadores com seletor de tonalidades.</p>
+          </div>
+          <span class="cat-cta">Ir para Maquiagem →</span>
+        </button>
+
+        <button class="category-card" onclick="navigateTo('hair-body')">
+          <div>
+            <span class="cat-tag">03 • Nutrição</span>
+            <h3>Cabelos &amp; Corpo</h3>
+            <p>Óleos capilares, manteigas corporais e esfoliantes suaves para o banho.</p>
+          </div>
+          <span class="cat-cta">Ir para Cabelos &amp; Corpo →</span>
+        </button>
+      </div>
+
+      <div class="section-head">
+        <h2>Mais vendidos</h2>
+        <button class="link-inline" onclick="navigateTo('skincare')">Ver catálogo completo →</button>
+      </div>
+
+      <div class="product-grid" id="homeBestsellers"></div>
+    </div>
+  </main>
+
+  <!-- PÁGINA 2: SKINCARE -->
+  <main id="page-skincare" class="page">
+    <div class="container">
+      <div class="page-banner">
+        <div>
+          <span class="eyebrow">Página 02 • Cuidados Faciais</span>
+          <h1>Skincare Botânico</h1>
+          <p>Fórmulas concentradas para fortalecer a barreira cutânea, reter umidade e devolver o viço natural.</p>
+        </div>
+      </div>
+
+      <div class="filters" id="skincareFilters">
+        <button class="filter-chip active" data-filter="Todos" onclick="setSkinFilter('Todos', this)">Todos</button>
+        <button class="filter-chip" data-filter="Pele Seca" onclick="setSkinFilter('Pele Seca', this)">Pele Seca</button>
+        <button class="filter-chip" data-filter="Pele Mista/Oleosa" onclick="setSkinFilter('Pele Mista/Oleosa', this)">Pele Mista/Oleosa</button>
+        <button class="filter-chip" data-filter="Pele Sensível" onclick="setSkinFilter('Pele Sensível', this)">Pele Sensível</button>
+      </div>
+
+      <div class="product-grid" id="skincareGrid"></div>
+    </div>
+  </main>
+
+  <!-- PÁGINA 3: MAQUIAGEM -->
+  <main id="page-makeup" class="page">
+    <div class="container">
+      <div class="page-banner">
+        <div>
+          <span class="eyebrow">Página 03 • Cor Leve &amp; Luminosa</span>
+          <h1>Maquiagem</h1>
+          <p>Escolha a tonalidade diretamente no cartão antes de adicionar à sacola. Texturas moduláveis para o dia a dia.</p>
+        </div>
+      </div>
+
+      <div class="product-grid" id="makeupGrid"></div>
+    </div>
+  </main>
+
+  <!-- PÁGINA 4: CABELOS & CORPO -->
+  <main id="page-hair-body" class="page">
+    <div class="container">
+      <div class="page-banner">
+        <div>
+          <span class="eyebrow">Página 04 • Ritual Sensorial</span>
+          <h1>Cabelos &amp; Corpo</h1>
+          <p>Tratamentos nutritivos com óleos prensados a frio para fios macios e pele aveludada após o banho.</p>
+        </div>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Renovar</h3>
+          <p>Esfolie suavemente com grãos vegetais para remover células mortas sem ressecar.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Nutrir</h3>
+          <p>Aplique óleos e manteigas ricas em ácidos graxos nos fios e áreas mais secas.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Selar</h3>
+          <p>Finalize com brumas ou óleos leves para prolongar o perfume suave e a maciez.</p>
+        </div>
+      </div>
+
+      <div class="product-grid" id="hairBodyGrid"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong style="color: var(--ink); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem;">Éclat Botanique</strong>
+        <p>Landing page multi-seções (SPA) pronta para editar no VS Code.</p>
+      </div>
+      <div>Início • Skincare • Maquiagem • Cabelos &amp; Corpo</div>
+    </div>
+  </footer>
+
+  <!-- CARRINHO LATERAL -->
+  <div class="drawer-backdrop" id="cartBackdrop" onclick="handleBackdropClick(event)">
+    <aside class="drawer" aria-label="Sacola de compras">
+      <div class="drawer-head">
+        <h3>Sua Sacola</h3>
+        <button class="close-btn" onclick="toggleCart(false)" aria-label="Fechar">✕</button>
+      </div>
+
+      <div class="shipping-bar">
+        <span id="shippingText">Adicione 50,00 € para portes gratuitos</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="shippingProgress"></div>
+        </div>
+      </div>
+
+      <div class="drawer-items" id="cartItems"></div>
+
+      <div class="drawer-foot">
+        <div class="subtotal-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">0,00 €</span>
+        </div>
+        <button class="btn-primary" style="width: 100%;" onclick="checkout()">Finalizar Encomenda</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const PRODUCTS = [
+      {
+        id: 'sk-1',
+        page: 'skincare',
+        name: 'Sérum Néroli & Esqualano',
+        category: 'Skincare',
+        skinType: 'Pele Seca',
+        badge: 'Best-seller',
+        price: 38.00,
+        color: '#E8D5C4',
+        desc: 'Repõe a hidratação profunda e suaviza linhas finas com esqualano vegetal e flor de laranjeira.'
+      },
+      {
+        id: 'sk-2',
+        page: 'skincare',
+        name: 'Gel Equilibrante Chá Verde',
+        category: 'Skincare',
+        skinType: 'Pele Mista/Oleosa',
+        badge: 'Oil-free',
+        price: 32.00,
+        color: '#CFE0D3',
+        desc: 'Controla o brilho excessivo da zona T e mantém a pele fresca sem pesar.'
+      },
+      {
+        id: 'sk-3',
+        page: 'skincare',
+        name: 'Creme Calmante Aveia & Calêndula',
+        category: 'Skincare',
+        skinType: 'Pele Sensível',
+        badge: 'Sem perfume',
+        price: 35.00,
+        color: '#EFE6D8',
+        desc: 'Alivia vermelhidão e reforça a barreira cutânea com aveia coloidal e calêndula.'
+      },
+      {
+        id: 'sk-4',
+        page: 'skincare',
+        name: 'Bruma Tônica Rosa Damascena',
+        category: 'Skincare',
+        skinType: 'Pele Sensível',
+        badge: 'Refrescante',
+        price: 24.00,
+        color: '#EED4D8',
+        desc: 'Tonifica e prepara a pele após a limpeza, deixando um toque macio e luminoso.'
+      },
+      {
+        id: 'mk-1',
+        page: 'makeup',
+        name: 'Blush Líquido Pétala',
+        category: 'Maquiagem',
+        badge: 'Acabamento natural',
+        price: 26.00,
+        desc: 'Fórmula leve que se funde à pele com efeito corado saudável e modulável.',
+        shades: [
+          { name: 'Rosa Antigo', hex: '#C97B7A' },
+          { name: 'Pêssego Solar', hex: '#DF9A78' },
+          { name: 'Framboesa', hex: '#A84E5C' }
+        ]
+      },
+      {
+        id: 'mk-2',
+        page: 'makeup',
+        name: 'Bálsamo Labial Nutritivo',
+        category: 'Maquiagem',
+        badge: 'Com manteiga de karité',
+        price: 19.00,
+        desc: 'Cor translúcida com brilho confortável e nutrição contínua para os lábios.',
+        shades: [
+          { name: 'Figo Madura', hex: '#8E4A56' },
+          { name: 'Caramelo Mel', hex: '#B97A57' },
+          { name: 'Cereja Suave', hex: '#C65D6B' }
+        ]
+      },
+      {
+        id: 'mk-3',
+        page: 'makeup',
+        name: 'Iluminador Orvalho de Ouro',
+        category: 'Maquiagem',
+        badge: 'Glow sutil',
+        price: 29.00,
+        desc: 'Micro-pérolas minerais para pontos altos do rosto sem partículas grossas.',
+        shades: [
+          { name: 'Champanhe', hex: '#E6CFA8' },
+          { name: 'Bronze Quente', hex: '#C49468' }
+        ]
+      },
+      {
+        id: 'hb-1',
+        page: 'hair-body',
+        name: 'Óleo Capilar Argan & Camélia',
+        category: 'Cabelos',
+        badge: 'Controle de frizz',
+        price: 34.00,
+        color: '#E5CFA3',
+        desc: 'Nutre pontas ressecadas, aumenta o brilho e protege contra o calor térmico.'
+      },
+      {
+        id: 'hb-2',
+        page: 'hair-body',
+        name: 'Manteiga Corporal Baunilha & Cacau',
+        category: 'Corpo',
+        badge: '24h hidratação',
+        price: 28.00,
+        color: '#DEC5AC',
+        desc: 'Textura rica que derrete no contato com a pele e deixa um aroma envolvente.'
+      },
+      {
+        id: 'hb-3',
+        page: 'hair-body',
+        name: 'Esfoliante Corporal Sal & Eucalipto',
+        category: 'Corpo',
+        badge: 'Spa em casa',
+        price: 27.00,
+        color: '#D2E0DC',
+        desc: 'Renova a textura da pele no banho com cristais minerais e óleo de amêndoas.'
+      }
+    ];
+
+    let currentSkinFilter = 'Todos';
+    const selectedShades = {};
+    let cart = [];
+
+    // Inicializa tons padrão da maquiagem
+    PRODUCTS.filter(p => p.shades).forEach(p => {
+      selectedShades[p.id] = p.shades[0].name;
+    });
+
+    function formatEUR(value) {
+      return value.toFixed(2).replace('.', ',') + ' €';
+    }
+
+    function navigateTo(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('page-' + pageId);
+      if (target) target.classList.add('active');
+
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.page === pageId);
+      });
+
+      document.getElementById('navLinks').classList.remove('open');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function setSkinFilter(filter, btnEl) {
+      currentSkinFilter = filter;
+      document.querySelectorAll('#skincareFilters .filter-chip').forEach(c => c.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderSkincare();
+    }
+
+    function selectShade(productId, shadeName, btnEl) {
+      selectedShades[productId] = shadeName;
+      const card = btnEl.closest('.product-card');
+      card.querySelectorAll('.shade-dot').forEach(dot => dot.classList.remove('selected'));
+      btnEl.classList.add('selected');
+      const labelEl = card.querySelector('.active-shade-name');
+      if (labelEl) labelEl.textContent = shadeName;
+    }
+
+    function renderProductCard(product) {
+      const hasShades = Array.isArray(product.shades) && product.shades.length > 0;
+      const activeShade = selectedShades[product.id] || '';
+      const activeShadeObj = hasShades
+        ? (product.shades.find(s => s.name === activeShade) || product.shades[0])
+        : null;
+
+      const heroBg = hasShades
+        ? `linear-gradient(135deg, ${activeShadeObj.hex}33, ${activeShadeObj.hex}77)`
+        : `linear-gradient(135deg, ${product.color}, #F5EFE6)`;
+
+      return `
+        <article class="product-card">
+          <div class="product-swatch-hero" style="background: ${heroBg};">
+            <span class="product-badge">${product.badge}</span>
+          </div>
+          <div class="product-body">
+            <div>
+              <div class="product-meta">${product.category}${product.skinType ? ' • ' + product.skinType : ''}</div>
+              <h3 class="product-title">${product.name}</h3>
+              <p class="product-desc">${product.desc}</p>
+
+              ${hasShades ? `
+                <div class="shade-box">
+                  <div class="shade-label">Tom: <strong class="active-shade-name">${activeShade}</strong></div>
+                  <div class="shade-dots">
+                    ${product.shades.map(s => `
+                      <button
+                        type="button"
+                        class="shade-dot ${s.name === activeShade ? 'selected' : ''}"
+                        style="background: ${s.hex};"
+                        title="${s.name}"
+                        aria-label="Selecionar tom ${s.name}"
+                        onclick="selectShade('${product.id}', '${s.name}', this)"
+                      ></button>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="product-footer">
+              <span class="price">${formatEUR(product.price)}</span>
+              <button class="add-btn" onclick="addToCart('${product.id}')">Adicionar</button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderHome() {
+      const featuredIds = ['sk-1', 'mk-1', 'hb-1'];
+      const items = PRODUCTS.filter(p => featuredIds.includes(p.id));
+      document.getElementById('homeBestsellers').innerHTML = items.map(renderProductCard).join('');
+    }
+
+    function renderSkincare() {
+      const list = PRODUCTS.filter(p => {
+        if (p.page !== 'skincare') return false;
+        if (currentSkinFilter === 'Todos') return true;
+        return p.skinType === currentSkinFilter;
+      });
+      document.getElementById('skincareGrid').innerHTML = list.map(renderProductCard).join('');
+    }
+
+    function renderMakeup() {
+      const list = PRODUCTS.filter(p => p.page === 'makeup');
+      document.getElementById('makeupGrid').innerHTML = list.map(renderProductCard).join('');
+    }
+
+    function renderHairBody() {
+      const list = PRODUCTS.filter(p => p.page === 'hair-body');
+      document.getElementById('hairBodyGrid').innerHTML = list.map(renderProductCard).join('');
+    }
+
+    function addToCart(productId) {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+
+      const shade = selectedShades[product.id] || null;
+      const key = shade ? `${product.id}__${shade}` : product.id;
+
+      const existing = cart.find(item => item.key === key);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          key,
+          id: product.id,
+          name: product.name,
+          shade,
+          price: product.price,
+          qty: 1
+        });
+      }
+
+      updateCartUI();
+      showToast(`${product.name}${shade ? ` (${shade})` : ''} adicionado à sacola`);
+    }
+
+    function changeQty(key, delta) {
+      const idx = cart.findIndex(item => item.key === key);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const totalQty = cart.reduce((acc, item) => acc + item.qty, 0);
+      const subtotal = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
+
+      document.getElementById('cartCount').textContent = totalQty;
+      document.getElementById('cartSubtotal').textContent = formatEUR(subtotal);
+
+      const freeShippingThreshold = 50;
+      const remaining = Math.max(0, freeShippingThreshold - subtotal);
+      const pct = Math.min(100, (subtotal / freeShippingThreshold) * 100);
+      document.getElementById('shippingProgress').style.width = pct + '%';
+      document.getElementById('shippingText').textContent = remaining === 0
+        ? 'Parabéns! Ganhou portes gratuitos.'
+        : `Faltam ${formatEUR(remaining)} para portes gratuitos`;
+
+      const container = document.getElementById('cartItems');
+      if (cart.length === 0) {
+        container.innerHTML = '<div class="empty-state">A sua sacola está vazia.<br/>Explore as 4 páginas para adicionar produtos.</div>';
+        return;
+      }
+
+      container.innerHTML = cart.map(item => `
+        <div class="cart-item">
+          <div>
+            <div class="cart-item-title">${item.name}</div>
+            <div class="cart-item-sub">
+              ${item.shade ? `Tom: ${item.shade} • ` : ''}${formatEUR(item.price)} un.
+            </div>
+          </div>
+          <div class="qty-controls">
+            <button class="qty-btn" onclick="changeQty('${item.key}', -1)">−</button>
+            <span style="font-size: 0.9rem; font-weight: 600; min-width: 18px; text-align: center;">${item.qty}</span>
+            <button class="qty-btn" onclick="changeQty('${item.key}', 1)">+</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleCart(open) {
+      document.getElementById('cartBackdrop').classList.toggle('open', open);
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'cartBackdrop') toggleCart(false);
+    }
+
+    function checkout() {
+      if (cart.length === 0) {
+        showToast('Adicione um produto antes de finalizar.');
+        return;
+      }
+      const subtotal = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
+      cart = [];
+      updateCartUI();
+      toggleCart(false);
+      showToast(`Encomenda simulada (${formatEUR(subtotal)}) concluída!`);
+    }
+
+    let toastTimer;
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('show'), 2600);
+    }
+
+    // Renderização inicial
+    renderHome();
+    renderSkincare();
+    renderMakeup();
+    renderHairBody();
+    updateCartUI();
+  </script>
+</body>
+</html>
